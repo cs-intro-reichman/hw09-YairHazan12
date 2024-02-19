@@ -50,6 +50,9 @@ public class List {
         while (pointer != null) {
             s += pointer.toString();
             pointer = pointer.next;
+            if (pointer != null) {
+                s += " ";
+            }
         }
         s += ")";
         return s;
