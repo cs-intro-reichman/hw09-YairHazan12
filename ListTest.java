@@ -62,7 +62,7 @@ public class ListTest {
             if (!res){
                 System.out.println("Word: " + word + ", Char: " + word.charAt(i) + ", Index: " + i);
                 System.out.println("Expected: size:" + solution.size() + ", first: " + solution.getFirst());
-                System.out.println("Actual: " + yourSolution.getSize() + ", first: " + yourSolution.getFirst().chr);
+                System.out.println("Actual: size:" + yourSolution.getSize() + ", first: " + yourSolution.getFirst().cp.chr);
             }
             result = result && res;
         }
@@ -73,7 +73,7 @@ public class ListTest {
         
     }
     private static boolean testAddFirstCase (LinkedList<CharData> solution, List yourSolution) {
-        return solution.size() == yourSolution.getSize() && solution.get(0).equals(yourSolution.getFirst().chr);
+        return solution.size() == yourSolution.getSize() && solution.get(0).equals(yourSolution.getFirst().cp.chr);
     }
     public static boolean testToString() {
         boolean result = true;
