@@ -9,7 +9,7 @@ public class List {
         list.update('h');list.update('h');list.update('h');list.update('l');list.update('l');list.update('a');list.update('a');
         System.out.println(list);
         System.out.println(list.get(0));
-        list.remove('a');
+        list.remove('/');
         System.out.println(list);
     }
 
@@ -104,7 +104,7 @@ public class List {
             size--;
             return true;
         }
-        while (pointer != null) {
+        while (pointer.next != null) {
             if (chr == pointer.next.cp.chr) {
                 pointer.next = pointer.next.next;
                 size--;
