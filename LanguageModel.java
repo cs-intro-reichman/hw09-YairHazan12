@@ -114,7 +114,7 @@ public class LanguageModel {
             return initialText;
         }
         String geString = initialText;
-        while (geString.length() <= textLength + initialText.length()) {
+        while (geString.length() <= textLength + initialText.length() - 1) {
             List probs = CharDataMap.get(geString.substring(geString.length() - windowLength));
             geString += getRandomChar(probs);
         }
