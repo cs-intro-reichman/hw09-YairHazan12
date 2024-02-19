@@ -62,7 +62,7 @@ public class ListTest {
             if (!res){
                 System.out.println("Word: " + word + ", Char: " + word.charAt(i) + ", Index: " + i);
                 System.out.println("Expected: size:" + solution.size() + ", first: " + solution.getFirst());
-                System.out.println("Actual: " + yourSolution.getSize() + ", first: " + yourSolution.getFirst().cp.chr);
+                System.out.println("Actual: size:" + yourSolution.getSize() + ", first: " + yourSolution.getFirst().cp.chr);
             }
             result = result && res;
         }
